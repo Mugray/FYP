@@ -3,36 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bee Environment Monitoring Dashboard</title>
     <link rel="stylesheet" href="styles.css">
-    <title>Bees</title>
 </head>
 <body>
-    <div>
-        <h1>Bees</h1>
-    </div>
-
-    <h2>CarbonMonoxide</h2>
-    <div id="co"></div>
-
-    <h2>Ozone</h2>
-    <div id="ozone"></div>
-
-    <h2>PM2.5</h2>
-    <div id="pm25"></div>
-
-    <h2>Population</h2>
-    <div id="population"></div>
-
-    <h2>Temperature</h2>
-    <div id="temp"></div>
-
-    <h2>Humidity</h2>
-    <div id="hum"></div>
-
-    <h2>All data</h2>
-    <div id="alldata">12</div>
-
-
-    <script src="main.js"></script>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="dashboard">
+            <div class="widget co">
+                <h2>CO Level</h2>
+                <div id="co"></div>
+            </div>
+            <div class="widget ozone">
+                <h2>Ozone Level</h2>
+                <div id="ozone"></div>
+            </div>
+            <div class="widget pm25">
+                <h2>PM2.5 Level</h2>
+                <div id="pm25"></div>
+            </div>
+            <div class="widget population">
+                <h2>Bee Population</h2>
+                <div id="population"></div>
+            </div>
+            <div class="widget temp">
+                <h2>Temperature</h2>
+                <div id="temp"></div>
+            </div>
+            <div class="widget hum">
+                <h2>Humidity</h2>
+                <div id="hum"></div>
+            </div>
+            <div class="widget alldata">
+                <h2>All Data</h2>
+                <div id="alldata"></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Bee Environment Monitoring</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>

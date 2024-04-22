@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Environmental Monitoring Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>Environmental Monitoring Dashboard</h1>
+    </header>
+    <main>
+        <section id="sensor-data">
+            <h2>Sensor Data</h2>
+            <ul>
+                <li>
+                    <h3>CO:</h3>
+                    <span id="co">--</span> ppm
+                </li>
+                <li>
+                    <h3>Ozone:</h3>
+                    <span id="ozone">--</span> ppm
+                </li>
+                <li>
+                    <h3>PM2.5:</h3>
+                    <span id="pm25">--</span> μg/m³
+                </li>
+                <li>
+                    <h3>Population:</h3>
+                    <span id="population">--</span> people
+                </li>
+                <li>
+                    <h3>Temperature:</h3>
+                    <span id="temp">--</span>°C
+                </li>
+                <li>
+                    <h3>Humidity:</h3>
+                    <span id="hum">--</span>%
+                </li>
+            </ul>
+        </section>
+        <section id="charts">
+            <h2>Charts</h2>
+            <div id="co-chart"></div>
+            <div id="ozone-chart"></div>
+            <div id="pm25-chart"></div>
+            <div id="temp-chart"></div>
+            <div id="hum-chart"></div>
+        </section>
+        <section id="alerts">
+            <h2>Alerts</h2>
+            <ul id="alert-list">
+                <!-- alerts will be displayed here -->
+            </ul>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
