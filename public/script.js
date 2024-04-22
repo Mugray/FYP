@@ -38,7 +38,7 @@ function updateCO(coValue) {
 }
 
 function updateOzone(ozoneValue) {
-  ozoneElement.innerHTML = `Ozone Level: ${ozoneValue} ppb`;
+  ozoneElement.innerHTML = `Ozone Level: ${ozoneValue} ppm`;
 }
 
 function updatePM25(pm25Value) {
