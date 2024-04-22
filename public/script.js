@@ -57,14 +57,14 @@ function updateHum(humValue) {
   humElement.innerHTML = `Humidity: ${humValue}%`;
 }
 
-function updateAllData(data) {
-  const tableHtml = '<table><tr><th>Date</th><th>CO</th><th>Ozone</th><th>PM2.5</th><th>Population</th><th>Temp</th><th>Hum</th></tr>';
-  data.forEach((entry) => {
-    tableHtml += `<tr><td>${entry.created_at}</td><td>${entry.field1}</td><td>${entry.field2}</td><td>${entry.field3}</td><td>${entry.field4}</td><td>${entry.field5}</td><td>${entry.field6}</td></tr>`;
-  });
-  tableHtml += '</table>';
-  allDataElement.innerHTML = tableHtml;
-}
+// function updateAllData(data) {
+//   const tableHtml = '<table><tr><th>Date</th><th>CO</th><th>Ozone</th><th>PM2.5</th><th>Population</th><th>Temp</th><th>Hum</th></tr>';
+//   data.forEach((entry) => {
+//     tableHtml += `<tr><td>${entry.created_at}</td><td>${entry.field1}</td><td>${entry.field2}</td><td>${entry.field3}</td><td>${entry.field4}</td><td>${entry.field5}</td><td>${entry.field6}</td></tr>`;
+//   });
+//   tableHtml += '</table>';
+//   allDataElement.innerHTML = tableHtml;
+// }
 
 // Fetch data every 10 seconds
 setInterval(fetchData, 10000);

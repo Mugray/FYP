@@ -10,6 +10,9 @@ header {
     background-color: #3498DB;
     padding: 1em;
     text-align: center;
+    position: static;
+    top: 0;
+    width: 100vw;
 }
 
 nav ul {
@@ -17,7 +20,7 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 nav li {
@@ -40,7 +43,7 @@ nav a:hover {
 }
 
 .widget {
-    background-color: #F7DC6F;
+    background-color: #0ff;
     padding: 20px;
     margin: 20px;
     border-radius: 10px;
@@ -52,8 +55,8 @@ nav a:hover {
 }
 
 #co, #ozone, #pm25, #population, #temp, #hum, #alldata {
-    height: 200px;
-    width: 200px;
+    height: auto;
+    min-width: 10rem;
     margin: 20px;
 }
 
@@ -63,4 +66,7 @@ footer {
     padding: 10px;
     text-align: center;
     clear: both;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
 }
